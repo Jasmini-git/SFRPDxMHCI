@@ -23,10 +23,20 @@ body {
   backdrop-filter: blur(4px); /* 선택: 배경 흐림 효과 */
 }
 
-/* logo text */
 .nav-logo {
   font-weight: bold;
   font-size: 18px;
+  text-decoration: none; /* 밑줄 제거 */
+  color: black;           /* 보라색 제거 */
+}
+
+.nav-logo:visited {
+  color: black; /* 방문한 후에도 보라색으로 안 바뀌게 */
+}
+
+.nav-logo:hover {
+  text-decoration: none; /* hover 시에도 밑줄 없음 */
+  color: black;
 }
 
 /* menu list */
@@ -81,13 +91,18 @@ body {
   z-index: 2;
 }
 
-
 /* Team Grid Styles */
 .section-content {
   max-width: 900px;
   margin: 0 auto;
   text-align: center; /* ⭐️ 핵심: 가운데 정렬 */
   padding: 40px 20px;
+}
+
+.section-content h2 {
+  color: #000000;
+  margin-bottom: 8px;
+  font-size: 30px;
 }
 
 .team-grid {
@@ -124,6 +139,10 @@ body {
   border-color: #2980b9;
 }
 
+.logo:hover img {
+  border-color: #2980b9;
+}
+
 .team-member h3 {
   color: #000000;
   margin-bottom: 8px;
@@ -156,6 +175,27 @@ body {
 .team-link:hover {
   transform: scale(1.2);
   background-color: rgba(52, 152, 219, 0.1);
+}
+
+.logo {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.logo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.logo img {
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 16px;
+  transition: border-color 0.3s ease;
 }
 
 /* Responsive Design */

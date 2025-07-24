@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Design</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="style-design.css"/>
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">SFRPD X MHCI</a>
+                <ul class="nav-links">
+                <li><a href="research.html">Research</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="solution.html">Solution</a></li>
+                </ul>
+            </nav>
+            <section class="design-hero">
+                <div class="design-hero-content">
+                <h1>Design</h1>
+                <p>
+                    Working with constraints, not against them. Our design approach balanced user needs with operational realities to create solutions that are both usable and feasible.
+                </p>
+                </div>
+            </section>
+        </div>
+
+        <section class="design-approach">
+            <h2>Our Design Approach</h2>
+            
+            <div class="approach-summary">
+              <p>
+                Our client’s landscape is a complex one, consisting of legacy systems, budget limitations, and lean staffing. As a result, our design approach required working with these constraints rather than against them.
+              </p>
+            </div>
+          
+            <div class="approach-cards">
+              <div class="card resident">
+                <h3>👥 For Residents</h3>
+                <p>
+                  We focused on <strong>increasing visibility</strong> and <strong>reducing guesswork</strong>, making it easier to find accurate information, understand policies, and complete common tasks without friction.
+                </p>
+                <div class="tags">
+                  <span>Visibility</span><span>Clarity</span><span>Accessibility</span>
+                </div>
+              </div>
+          
+              <div class="card staff">
+                <h3>⚙️ For Staff</h3>
+                <p>
+                  We prioritized <strong>reducing redundancy</strong>, building tools that streamline communication and help them focus on the work that requires judgment, not repetition.
+                </p>
+                <div class="tags">
+                  <span>Efficiency</span><span>Automation</span><span>Focus</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="result-box">
+              <h3>The Result</h3>
+              <p>A public system that is <strong>easier to navigate</strong>, <strong>easier to manage</strong>, and <strong>more equitable by design.</strong></p>
+            </div>
+        </section>
+
+        <!-- Section 3: Prototyping -->
+        <section class="prototyping">
+            <h2>Prototyping & Beyond</h2>
+            <p class="summary">Our iterative design process moved from broad exploration to focused refinement.</p>
+
+            <div class="timeline">
+            <div class="step" onclick="toggleDetails('proto1')">
+                <div class="label">
+                <h3>Parallel Prototyping <span class="tag">3 weeks</span></h3>
+                <p>Developed and tested 17 prototypes in parallel to explore diverse ideas and validate assumptions.</p>
+                </div>
+                <div class="details" id="proto1">
+                <p>This phase focused on generating breadth, not polish. Each prototype targeted specific angles: real-time reservation, communication, discoverability, staff tools, or playful engagement.</p>
+                <p><strong>17</strong> prototypes<br/><strong>5</strong> focus areas</p>
+                </div>
+            </div>
+
+            <div class="step" onclick="toggleDetails('proto2')">
+                <div class="label">
+                <h3>Iterative Refinement <span class="tag">6 weeks</span></h3>
+                <p>Refined high-potential concepts into polished prototypes based on user feedback and feasibility.</p>
+                </div>
+                <div class="details" id="proto2">
+                <p>We integrated insights from parallel prototyping into focused, feasible solutions that balance public usability with operational ease for staff.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="insight">
+            <h3>Key Insights</h3>
+            <p>This process clarified which ideas are worth developing, which should be discarded, and most importantly, what matters most to users: <strong>context</strong>, <strong>clarity</strong>, and <strong>control</strong>.</p>
+            </div>
+        </section>
+
+        <script>
+            document.querySelectorAll('.step').forEach(step => {
+              step.addEventListener('click', () => {
+                // 1. 다른 열린 카드 닫기
+                document.querySelectorAll('.step').forEach(other => {
+                  if (other !== step) {
+                    other.classList.remove('expanded');
+                  }
+                });
+          
+                // 2. 현재 카드 열기/닫기
+                step.classList.toggle('expanded');
+              });
+            });
+          </script>
+          
+          <section class="ecosystem-section">
+            <h2>An Ecosystem of Solutions</h2>
+            <p class="ecosystem-subtitle">Five interconnected solutions designed to work together as a comprehensive system.</p>
+            <div class="ecosystem-cards">
+              <div class="solution-card">
+                <span class="tag stafftools">Staff Tools</span>
+                <h3>Email Helper</h3>
+                <p>Streamlined email communication tools to reduce staff workload and improve response consistency.</p>
+              </div>
+              <div class="solution-card">
+                <span class="tag accessibility">Accessibility</span>
+                <h3>QR Codes/NFC</h3>
+                <p>Enhanced signage with QR codes and NFC technology for instant access to park information and reservations.</p>
+              </div>
+              <div class="solution-card">
+                <span class="tag digital">Digital Experience</span>
+                <h3>Web Content Guidelines and Redesign</h3>
+                <p>Comprehensive content strategy and website redesign to improve discoverability and user experience.</p>
+              </div>
+              <div class="solution-card">
+                <span class="tag support">Support</span>
+                <h3>Chatbot</h3>
+                <p>AI-powered chatbot to provide instant answers to common questions and guide users through processes.</p>
+              </div>
+              <div class="solution-card">
+                <span class="tag strategy">Strategy</span>
+                <h3>RFP Requirements and Ideal Reservation System Design</h3>
+                <p>Detailed specifications and design recommendations for future reservation system improvements.</p>
+              </div>
+            </div>
+          </section>
+          
+    </body>
+
+    <footer class="footer">
+        <div class="footer-content">
+        <p class="footer-info">The work and knowledge gained from this project are only intended to be applicable to the company and context involved and there is no suggestion or indication that it may be useful or applicable to others. This project was conducted for educational purposes and is not intended to contribute to generalizable knowledge.</p>
+        <p class="footer-copy">© 2025 CMU MHCI Capstone</p>    
+        </div>
+        <div class="footer-logos">
+        <img src="images/hcii-logo.png" alt="HCII Logo"/>
+        <span class="footer-x">x</span>
+        <img src="images/sfrpd-logo.jpg" alt="SFRPD Logo"/>
+        </div>
+    </footer>
+
+</html>
