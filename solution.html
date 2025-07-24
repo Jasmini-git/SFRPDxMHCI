@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-solution.css" />
+</head>
+<body>
+  <!-- Hero Section -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">SFRPD X MHCI</a>
+    <ul class="nav-links">
+      <li><a href="research.html">Research</a></li>
+      <li><a href="design.html">Design</a></li>
+      <li><a href="solution.html">Solution</a></li>
+    </ul>
+  </nav>
+
+  <div class="solution-hero">
+    <h1>Solutions</h1>
+    <p>
+      Explore our comprehensive ecosystem of solutions —<br />
+      each designed to address a specific challenge with clarity and impact.
+    </p>
+  </div>
+
+  <div class="solution-container">
+    <aside class="solution-sidebar">
+      <h2>Solutions</h2>
+      <p>Explore our comprehensive ecosystem of solutions</p>
+      <ul class="solution-nav">
+        <li class="active" data-target="email-helper">
+          <span class="icon">📧</span>
+          <div>
+            <strong>Email Helper</strong>
+            <p>Browser extension for generating consistent email responses</p>
+          </div>
+        </li>
+        <li data-target="qr-nfc">
+          <span class="icon">📱</span>
+          <div>
+            <strong>QR Codes/NFC</strong>
+            <p>Enhanced signage with digital access points</p>
+          </div>
+        </li>
+        <li data-target="web-redesign">
+          <span class="icon">🌐</span>
+          <div>
+            <strong>Web Content Guidelines and Redesign</strong>
+            <p>Comprehensive website improvement strategy</p>
+          </div>
+        </li>
+        <li data-target="chatbot">
+          <span class="icon">💬</span>
+          <div>
+            <strong>Chatbot</strong>
+            <p>AI-powered assistance for common inquiries</p>
+          </div>
+        </li>
+        <li data-target="rfp">
+          <span class="icon">📝</span>
+          <div>
+            <strong>RFP Requirements and Ideal Reservation System Design</strong>
+            <p>Future system specifications and recommendations</p>
+          </div>
+        </li>
+      </ul>
+    </aside>
+
+    <main class="solution-detail">
+      <!-- Email Helper Section -->
+        <section id="email-helper" class="solution-section" style="display: block;">
+            <!-- Email Helper Overview -->
+            <section class="solution-overview">
+            <div class="container">
+                <h2>Overview</h2>
+                <p>
+                To support SFRPD's lean staff in handling the high volume of repetitive resident inquiries, we developed a lightweight "email helper" browser extension. Instead of manually drafting or searching for past responses, staff can now select from customizable, pre-built templates to generate accurate, consistent replies in seconds.
+                </p>
+                <p>
+                This improves efficiency, ensures consistency, and scales communication without additional staffing or software. Future versions might include shared template libraries and smart reply suggestions, but even as it exists today, the tool offers a practical, low-lift solution to a high-volume pain point.
+                </p>
+            </div>
+            </section>
+
+            <!-- Key Features -->
+            <section class="solution-features">
+            <div class="container">
+                <h2>Key Features</h2>
+                <div class="feature-cards">
+                <div class="feature-card">
+                    <h3>Template Management</h3>
+                    <p>
+                    Users can create, update, delete, and categorize templates. These are written in a customized rich-text editor that has been adapted with a custom node for inserting in-line template inputs.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <h3>Template Sharing</h3>
+                    <p>
+                    Users may import and export to the extension in structured file format, providing the convenience of sharing templates while still avoiding the complexities of maintaining a centralized system.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <h3>Two Methods of Template Use</h3>
+                    <p>
+                    Once a template has been completed, users can either create a draft in their default mail app or copy the email content.
+                    </p>
+                </div>
+                </div>
+            </div>
+            </section>
+
+            <!-- Design Process -->
+            <section class="design-process">
+            <h2>Design Process</h2>
+            <div class="process-card">
+                <h3>Problem</h3>
+                <p>
+                From our interviews with SFRPD call center staff and analysis of 4900 emails between staff and customers, we discovered that staff spend a lot of time manually drafting and sending follow up emails to customers as part of the picnic permit approval process.
+                <br><br>
+                Whenever a customer submits a picnic permit application that requires further approval (e.g. the customer indicates that they want a bouncy house at their event), staff must send an email explaining the policies and requirements for the desired amenity, informing them that the desired amenity is not allowed, or asking them to provide further clarification for their request.
+                <br><br>
+                These follow up emails are drafted manually each time by the individual staff member, which is time consuming, tedious, and inconsistent. Knowing that the email responses repeat the same content, we discovered an opportunity to streamline this process.
+                </p>
+            </div>
+            <div class="process-card">
+                <h3>How Might We</h3>
+                <div class="how-might-we-box">
+                How might we automate the process of following up with customers regarding their picnic permit applications in order to improve staff efficiency and provide customers with more consistent responses?
+                </div>
+            </div>
+            <div class="process-card">
+                <h3>Ideation</h3>
+                <p>
+                We conducted a brainstorming session where we came up with ideas to reduce the manual back and forth between staff and customers. One idea we explored revolved around immediately prompting the customer to send information that will be required by staff, either directly through ActiveNet or through an automated email.
+                <br><br>
+                Another idea was about improving the form validation so that customers wouldn't be able to submit if they selected the wrong answers and staff wouldn't have to manually verify the answers.
+                <br><br>
+                Eventually we pursued the idea of a browser extension that allows staff to draft follow up emails using templates. We chose this idea because it's something our team could develop within the timeline of the project, it doesn't require new third party vendors, and it doesn't require integrating with ActiveNet.
+                </p>
+            </div>
+            </section>
+
+            <!-- Implementation -->
+            <section class="implementation">
+            <h2>Implementation</h2>
+            <p>
+                We will hand off a working application and do not expect SFRPD to do any additional development or design work on this tool. By the close of Capstone, we will have submitted the extension for review in the Microsoft and Chrome web stores.
+                <br><br>
+                Pending approval and vetting by SFRPD's in-house IT team, the tool should be available for staff to adopt into their workflows if desired. Until then, the extension can be used in an unofficial capacity by cloning its GitHub repository, building the app locally, and manually uploading the resulting production files to a browser.
+            </p>
+            </section>
+
+            <!-- Success Metrics -->
+            <section class="metrics">
+                <h2>Success Metrics</h2>
+                <p>To ensure this solution delivers impact, we recommend tracking:</p>
+              
+                <ul class="metric-list">
+                  <li>
+                    <span class="metric-title">Time-on-task:</span>
+                    How long it takes staff to write an email using Email Helper vs. how long it takes without Email Helper.
+                  </li>
+                  <li>
+                    <span class="metric-title">Staff adoption:</span>
+                    Do staff actually use Email Helper? Do they perceive it to be useful?
+                  </li>
+                </ul>
+            </section>
+              
+        </section>
+
+        <section id="qr-nfc" class="solution-section" style="display: none">
+            <!-- QR/NFC Section Header -->
+            <div class="solution-header">
+            <div class="icon-and-title">
+                <span class="icon">📱</span>
+                <h1>QR Codes/NFC</h1>
+            </div>
+            <p class="subtitle">Physical touchpoints, placed near reservable facilities, which allow park goers to learn about the reservation system and see real time availability through their phones.</p>
+            </div>
+        
+            <!-- Overview -->
+            <section class="solution-overview">
+                <div class="container">
+                    <h2>Overview</h2>
+                    <p>
+                    The final QR/NFC plaques are multi-modal, low-barrier touchpoints designed to offer just-in-time information. Mounted directly onto picnic tables and signage posts, they invite users to either scan or tap with their phones to see real-time site availability, reservation status, and relevant park guidelines.
+                    </p>
+                    <p>
+                    This solution doesn't just inform, it builds awareness of SFRPD's broader digital ecosystem, nudging users toward self-service, reservation literacy, and better park experiences overall.
+                    </p>
+                </div>
+            </section>
+        
+            <!-- Key Features -->
+            <section class="solution-features">
+                <div class="container">
+                    <h2>Key Features</h2>
+                    <div class="feature-cards">
+                    <div class="feature-card">
+                        <h3>QR Codes</h3>
+                        <p>
+                        Each sign will display a prominently placed QR code that links to a mobile-friendly page with park-specific content. Users can simply scan the QR code with their phone camera to access information without having to download an app.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>NFC Technology</h3>
+                        <p>
+                        For an enhanced experience, NFC chips can be embedded in or attached to the signage. These allow compatible smartphones to tap the sign and access the same content instantly. Key advantages include faster access, more intuitive interaction for tech-savvy users, and less visual clutter.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Relevant and Timely Information</h3>
+                        <p>
+                        Scanning or tapping provides access to rules and regulations, real-time picnic table availability, reservation instructions, contact information, safety alerts, and live updates during events. Content can be updated remotely through a centralized CMS.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Design Process -->
+            <section class="design-process">
+                <h2>Design Process</h2>
+                <div class="process-card">
+                    <h3>Problem</h3>
+                    <p>
+                    Through our conversations with SF park goers and SFRPD staff, we learned that most park goers are not aware of the existence of a reservation system, which causes unintentional rule-breaking and conflict between park goers.
+                    <br><br>
+                    Many areas lack visible signage, rules and booking information aren't easily accessible on-site, and park goers don't always receive guidance in person. This situation leaves park goers feeling confused, frustrated, and unsure of how to engage with park facilities. Meanwhile, staff must spend additional time answering repeated questions or enforcing rules that could have been self-explanatory.
+                    </p>
+                </div>
+                <div class="process-card">
+                    <h3>How Might We</h3>
+                    <div class="how-might-we-box">
+                    How might we improve awareness of SFRPD's reservation system, park rules, and real-time availability of park facilities for in-person park goers?
+                    </div>
+                </div>
+                <div class="process-card">
+                    <h3>Ideation</h3>
+                    <p>
+                    Through early prototyping and concept testing, we explored several ideas for improving awareness of the reservation system for in-person park goers. One idea was to distribute zines that inform people about how to reserve park facilities. Another idea was adding maps to the parks that support wayfinding and inform park goers about the reservation system. Another idea was putting up signs with QR codes or phone numbers that allow users to make reservations on the spot and be informed about the reservation system.
+                    <br><br>
+                    We found out that although park goers do not have a strong desire to make on-the-spot reservations, they do want to know about the rules for using a facility and whether or not the facility has been reserved. This type of information helps them avoid conflict with other park goers and makes them feel more confident using park facilities.
+                    <br><br>
+                    We decided to move forward with using QR codes and NFCs as a touchpoint for delivering information to park goers because it's technically simple to implement and doesn't add additional signage to the parks.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Design Decisions -->
+            <section class="design-decisions">
+                <div class="container">
+                <h2>Design Decisions</h2>
+                <p>
+                    We designed a practical way for park-goers to access real-time information – such as whether a picnic table is reserved or what rules apply – by scanning or tapping a small plaque on-site. Through multiple iterations, we refined both the physical design and user experience.
+                </p>
+                <div class="decision-cards">
+                    <div class="decision-card">
+                    <h3>Identifying Key Use Moments</h3>
+                    <p>
+                        We first mapped out where and when this feature would be most helpful, for example, when visitors arrived at a picnic table and weren't sure if it was already reserved, or when they were looking for nearby amenities without signage.
+                    </p>
+                    </div>
+                    <div class="decision-card">
+                    <h3>Exploring Material Options</h3>
+                    <p>
+                        Because the plaques would live outdoors year-round, we tested materials that could withstand sun, rain, and potential vandalism. We landed on a razor-cut acrylic design that's durable and discreet, with both a QR code and embedded NFC chip.
+                    </p>
+                    </div>
+                    <div class="decision-card">
+                    <h3>Before-and-After Journey Mapping</h3>
+                    <p>
+                        We considered what users currently do when they're unsure about availability or rules, and how scanning or tapping a sign could shift that experience. This led to clearer language on the plaque and a mobile landing page that prioritizes immediate info (like availability) up top.
+                    </p>
+                    </div>
+                    <div class="decision-card">
+                    <h3>Clarifying Who Benefits Most</h3>
+                    <p>
+                        The design especially supports visitors who might otherwise struggle to access park information, and residents who rarely use the SFRPD website. With more than half of those we spoke to in SF being unaware of the department's reservation system, this solution creates an alternative point of entry by reaching users in the physical space.
+                    </p>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <!-- Success-Metrics -->
+            <section class="metrics">
+                <h2>Success Metrics</h2>
+                <p>To ensure this solution delivers impact, we recommend tracking:</p>
+              
+                <ul class="metric-list">
+                  <li>
+                    <strong>Number of scans per location:</strong>
+                    Track engagement using link management tools like Bitly to understand which locations see the most usage.
+                  </li>
+                  <li>
+                    <strong>Repeat scans vs. unique users:</strong>
+                    Measure whether users are returning to access information multiple times or if each scan represents a new user.
+                  </li>
+                  <li>
+                    <strong>Visitor satisfaction:</strong>
+                    Implement short in-page polls to gather feedback on the usefulness and clarity of the information provided.
+                  </li>
+                  <li>
+                    <strong>Reduction in staff-reported incidents:</strong>
+                    Monitor whether there's a decrease in confusion-related incidents or questions that staff need to address in person.
+                  </li>
+                </ul>
+            </section>
+  
+        </section>
+      
+        <section id="web-redesign" class="solution-section" style="display: none;">
+            <h1>Web Redesign</h1>
+            <p>Coming soon...</p>
+        </section>
+
+        <section id="chatbot" class="solution-section" style="display: none;">
+            <section class="solution-header">
+                <div class="icon-and-title">
+                <span class="icon">💬</span>
+                <h1>Chatbot</h1>
+                </div>
+                <p class="subtitle">
+                Testing and Ideal Chatbot Design – What we found from testing the chatbot that SFRPD purchased from their website vendor, CivicPlus, and our design of an ideal chatbot that addresses the gaps.
+                </p>
+            </section>
+            
+            <section class="solution-overview">
+                <h2>Overview</h2>
+                <p>
+                Since the start of this project, SFRPD has expressed interest in implementing an AI chatbot offered by CivicPlus to address the issue of poor website usability. They asked our team to test the performance of this chatbot in a sandbox environment so that they can request improvements from the vendor.
+                </p>
+                <p>
+                Our chatbot testing revealed critical gaps between current chatbot capabilities and service delivery requirements, while our design of an ideal chatbot demonstrates the functionalities that a chatbot should be able to perform in order to be truly useful for users and staff.
+                </p>
+            </section> 
+            
+            <section class="metrics chatbot">
+                <h2>Chatbot Testing</h2>
+              
+                <div class="white-card">
+                  <h3>Testing Approach</h3>
+                  <p>
+                    We initially came up with a systematic evaluation method with metrics across five criteria. However, once we saw how limited the current chatbot's capabilities are, we realized that a detailed numerical assessment wouldn't be useful for SFRPD.
+                  </p>
+                  <p>
+                    Instead, we decided to identify basic performance gaps through 40+ test scenarios covering the most common user inquiries.
+                  </p>
+                </div>
+              
+                <h3 class="findings-title">Testing Findings</h3>
+              
+                <ul class="failure-list">
+                  <li>
+                    <strong>❌ Failure to Handle Basic Inquiries</strong><br>
+                    When asked about picnic permits through the "quick question" feature provided, the chatbot responded: "I'm having trouble finding an answer."
+                  </li>
+                  <li>
+                    <strong>💬 Failure to Provide Consistent Responses</strong><br>
+                    When asked "How do I make a picnic permit?", the chatbot was able to respond correctly, but it failed to provide an answer for "How do I reserve a picnic area?" even though they're the same question.
+                  </li>
+                  <li>
+                    <strong>🎯 Failure to Provide Accurate Answers</strong><br>
+                    When asked to recommend a picnic site in Golden Gate Park, the chatbot recommended Golden Gate Heights Picnic Area, which is an entirely different park.
+                  </li>
+                  <li>
+                    <strong>☁️ Failure to Retain Context</strong><br>
+                    When asked "How much does it cost?" after correctly answering "How do I reserve an athletic field", the chatbot provided unrelated costs, failing to retain context.
+                  </li>
+                  <li>
+                    <strong>📅 Failure to Provide Up-to-Date Information</strong><br>
+                    When asked if a park had restrooms, the chatbot referenced a Taskforce Restroom Report from 2009.
+                  </li>
+                  <li>
+                    <strong>🔗 Failure to Provide Correct Links</strong><br>
+                    When asked about availability, the chatbot linked to a "Tentative Calendar for Special Events" instead of the proper ActiveNet availability calendar.
+                  </li>
+                </ul>
+            </section>
+              
+                       
+        </section>
+
+      <section id="rfp" class="solution-section" style="display: none;">
+        <h1>RFP</h1>
+        <p>Coming soon...</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="solution.js"></script>
+</body>
+</html>
