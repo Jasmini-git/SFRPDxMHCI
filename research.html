@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="style-research.css"/>
   <title>Research | SFRPD x MHCI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -19,85 +21,85 @@
       </ul>
     </nav>
 
-    <!-- Hero -->
+    <!-- Hero + Stats-->
     <section class="research-hero">
-      <h2>Research</h2>
-      <p>Through several months of research and numerous research methods, we deeply immersed ourselves into the world of SFRPD and identified key problems affecting both park goers and staff.</p>
-    </section>
-
-    <!-- Research Stats -->
-    <section class="research-stats">
-        <div class="stat-item">
-        <h3>60+</h3>
-        <p>user interviews</p>
-        </div>
-        <div class="stat-item">
-        <h3>5</h3>
-        <p>staff interviews</p>
-        </div>
-        <div class="stat-item">
-        <h3>50+</h3>
-        <p>survey responses</p>
-        </div>
-        <div class="stat-item">
-        <h3>4900</h3>
-        <p>emails analyzed</p>
-        </div>
-        <div class="stat-item">
-        <h3>800</h3>
-        <p>phone calls analyzed</p>
-        </div>
-    </section>
-    <section class="context-section">
-    <div class="context-intro">
-        <h2>Context</h2>
+      <div class="hero-content">
+        <h2>Research</h2>
         <p>
-        San Francisco's Recreation and Parks Department manages a complex reservation ecosystem
-        serving thousands of users annually.
+          Through several months of research and numerous research methods, we deeply immersed ourselves into the world of SFRPD and identified key problems affecting both park goers and staff.
         </p>
-    </div>
-
     
-
-    <div class="context-stats">
+        <div class="research-stats">
+          <div class="stat-item">
+            <h3>60+</h3>
+            <p>user interviews</p>
+          </div>
+          <div class="stat-item">
+            <h3>5</h3>
+            <p>staff interviews</p>
+          </div>
+          <div class="stat-item">
+            <h3>50+</h3>
+            <p>survey responses</p>
+          </div>
+          <div class="stat-item">
+            <h3>4900</h3>
+            <p>emails analyzed</p>
+          </div>
+          <div class="stat-item">
+            <h3>800</h3>
+            <p>phone calls analyzed</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="context-section">
+      <div class="content-wrapper">
+        <div class="section-title-wrapper">
+          <h2>SF Park Reservation Ecosystem</h2>
+          <p class="context-description">A complex, multi-platform system helping residents across the city reserve parks, fields, and community spaces—with usability challenges that shaped our redesign approach.</p>
+        </div>
+    
+      <div class="context-stats">
         <div class="context-stat"><h3>220+</h3><p>PARKS & OPEN SPACES</p></div>
         <div class="context-stat"><h3>70K</h3><p>ANNUAL RESERVATIONS</p></div>
         <div class="context-stat"><h3>4</h3><p>MAIN CHANNELS</p></div>
-    </div>
-
-    <div class="context-columns">
+      </div>
+    
+      <div class="context-columns">
         <div class="context-block">
-        <h4>The Users</h4>
-        <p>
+          <h4>The Users</h4>
+          <p>
             Diverse community members including families planning picnics, school staff organizing
             events, sports coaches booking fields, and event planners coordinating large gatherings.
-        </p>
+          </p>
         </div>
         <div class="context-block">
-        <h4>The System</h4>
-        <p>
+          <h4>The System</h4>
+          <p>
             A multi-platform ecosystem including the SFRPD website (CivicPlus), third-party platforms
             (ActiveCommunities, Formsite, Rec.us), phone support, and email communications.
-        </p>
+          </p>
         </div>
         <div class="context-block">
-        <h4>The Evolution</h4>
-        <p>
+          <h4>The Evolution</h4>
+          <p>
             Transitioned from a phone-heavy system ("constantly ringing phones") to online platforms
             post-2019, significantly reducing call volume but creating new usability challenges.
-        </p>
+          </p>
         </div>
-    </div>
+      </div>
     </section>
+    
 
     <section class="challenge-section">
         <h2>Initial Challenge</h2>
-        <div class="challenge-summary">
-          <p>
+          <p class="challenge-text">
             Despite SFRPD's efforts to modernize their services, fundamental usability barriers were preventing users from successfully navigating the reservation system independently. The impact was measurable: in 2023 alone, staff handled 
             <strong>13,000 phone calls</strong> and <strong>5,000 emails</strong> from users who couldn't complete their tasks online.
           </p>
-        </div>
+
       
         <div class="challenge-cards">
           <div class="challenge-card">
@@ -127,47 +129,75 @@
     <section class="process-section">
       <h2>Process</h2>
       <p class="instruction">Click on each card to learn more about our research methods and findings.</p>
-
       <div class="card-grid">
-        <!-- Cards -->
-        <div class="info-card" onclick="toggleCard(this)">
+    
+      
+        <div class="info-card expanded" onclick="toggleCard(this)">
           <h3>User Interviews</h3>
-          <p class="card-detail">60+ interviews with park users to understand their needs, frustrations, and current reservation behaviors.</p>
-        </div>
+          <div class="card-detail">
+            <p>60+ interviews with park users to understand their needs, frustrations, and current reservation behaviors.</p>
+          </div>
+        </div>          
+    
         <div class="info-card" onclick="toggleCard(this)">
           <h3>Staff Interviews</h3>
-          <p class="card-detail">5 in-depth interviews with SFRPD staff to understand operational challenges and system limitations.</p>
+          <div class="card-detail">
+            <p>5 in-depth interviews with SFRPD staff to understand operational challenges and system limitations.</p>
+          </div>
         </div>
+    
         <div class="info-card" onclick="toggleCard(this)">
           <h3>Call Log Data Analysis</h3>
-          <p class="card-detail">Analysis of 800 phone calls to identify common user issues and support patterns.</p>
+          <div class="card-detail">
+            <p>Analysis of 800 phone calls to identify common user issues and support patterns.</p>
+          </div>
         </div>
+    
         <div class="info-card" onclick="toggleCard(this)">
           <h3>Email Data Analysis</h3>
-          <p class="card-detail">Review of 4900 emails to understand user pain points and frequently asked questions.</p>
+          <div class="card-detail">
+            <p>Review of 4900 emails to understand user pain points and frequently asked questions.</p>
+          </div>
         </div>
+    
         <div class="info-card" onclick="toggleCard(this)">
           <h3>Audit of Current Reservation Flow</h3>
-          <p class="card-detail">Comprehensive evaluation of the existing reservation system and user journey.</p>
+          <div class="card-detail">
+            <p>Comprehensive evaluation of the existing reservation system and user journey.</p>
+          </div>
         </div>
+    
         <div class="info-card" onclick="toggleCard(this)">
           <h3>Competitor Analysis</h3>
-          <p class="card-detail">Analysis of 8 competitor and analogous domain solutions to identify best practices.</p>
+          <div class="card-detail">
+            <p>Analysis of 8 competitor and analogous domain solutions to identify best practices.</p>
+          </div>
         </div>
+    
         <div class="info-card" onclick="toggleCard(this)">
           <h3>Analogous Domain Research</h3>
-          <p class="card-detail">Research into similar reservation systems across different industries and contexts.</p>
+          <div class="card-detail">
+            <p>Research into similar reservation systems across different industries and contexts.</p>
+          </div>
         </div>
+    
         <div class="info-card" onclick="toggleCard(this)">
           <h3>Research on Current Vendors</h3>
-          <p class="card-detail">Evaluation of existing third-party platforms and their integration challenges.</p>
+          <div class="card-detail">
+            <p>Evaluation of existing third-party platforms and their integration challenges.</p>
+          </div>
         </div>
+    
         <div class="info-card" onclick="toggleCard(this)">
           <h3>User Questionnaire</h3>
-          <p class="card-detail">50+ survey responses providing quantitative data on user preferences and behaviors.</p>
+          <div class="card-detail">
+            <p>50+ survey responses providing quantitative data on user preferences and behaviors.</p>
+          </div>
         </div>
-      </div>
+      </div> 
+      
     </section>
+    
 
     <!-- Insights -->
 <section class="insights-section">

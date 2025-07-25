@@ -6,6 +6,7 @@
   <title>Solutions</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="style-solution.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Hero Section -->
@@ -70,23 +71,34 @@
     </aside>
 
     <main class="solution-detail">
-      <!-- Email Helper Section -->
+        <!-- Email Helper Section -->
         <section id="email-helper" class="solution-section" style="display: block;">
-            <!-- Email Helper Overview -->
-            <section class="solution-overview">
-            <div class="container">
-                <h2>Overview</h2>
-                <p>
-                To support SFRPD's lean staff in handling the high volume of repetitive resident inquiries, we developed a lightweight "email helper" browser extension. Instead of manually drafting or searching for past responses, staff can now select from customizable, pre-built templates to generate accurate, consistent replies in seconds.
-                </p>
-                <p>
-                This improves efficiency, ensures consistency, and scales communication without additional staffing or software. Future versions might include shared template libraries and smart reply suggestions, but even as it exists today, the tool offers a practical, low-lift solution to a high-volume pain point.
-                </p>
+          <!-- Header -->
+          <div class="solution-header">
+            <div class="icon-and-title">
+              <span class="icon">📧</span>
+              <h1>Email Helper</h1>
             </div>
-            </section>
+            <p class="subtitle">
+              A lightweight browser extension to help staff generate fast, consistent, and accurate replies to common picnic permit inquiries — reducing redundancy and improving response time.
+            </p>
+          </div>
+
+          <!-- Overview -->
+          <section class="solution-overview">
+            <div class="container">
+              <h2>Overview</h2>
+              <p>
+                To support SFRPD’s lean staff in handling the high volume of repetitive resident inquiries, we developed a lightweight “email helper” browser extension. Instead of manually drafting or searching for past responses, staff can now select from customizable, pre-built templates to generate accurate, consistent replies in seconds.
+              </p>
+              <p>
+                This improves efficiency, ensures consistency, and scales communication without additional staffing or software. Future versions might include shared template libraries and smart reply suggestions, but even as it exists today, the tool offers a practical, low-lift solution to a high-volume pain point.
+              </p>
+            </div>
+          </section>
 
             <!-- Key Features -->
-            <section class="solution-features">
+          <section class="solution-features">
             <div class="container">
                 <h2>Key Features</h2>
                 <div class="feature-cards">
@@ -110,10 +122,10 @@
                 </div>
                 </div>
             </div>
-            </section>
+          </section>
 
-            <!-- Design Process -->
-            <section class="design-process">
+          <!-- Design Process -->
+          <section class="design-process">
             <h2>Design Process</h2>
             <div class="process-card">
                 <h3>Problem</h3>
@@ -141,10 +153,10 @@
                 Eventually we pursued the idea of a browser extension that allows staff to draft follow up emails using templates. We chose this idea because it's something our team could develop within the timeline of the project, it doesn't require new third party vendors, and it doesn't require integrating with ActiveNet.
                 </p>
             </div>
-            </section>
+          </section>
 
-            <!-- Implementation -->
-            <section class="implementation">
+          <!-- Implementation -->
+          <section class="implementation">
             <h2>Implementation</h2>
             <p>
                 We will hand off a working application and do not expect SFRPD to do any additional development or design work on this tool. By the close of Capstone, we will have submitted the extension for review in the Microsoft and Chrome web stores.
@@ -242,12 +254,12 @@
                 <div class="process-card">
                     <h3>Ideation</h3>
                     <p>
-                    Through early prototyping and concept testing, we explored several ideas for improving awareness of the reservation system for in-person park goers. One idea was to distribute zines that inform people about how to reserve park facilities. Another idea was adding maps to the parks that support wayfinding and inform park goers about the reservation system. Another idea was putting up signs with QR codes or phone numbers that allow users to make reservations on the spot and be informed about the reservation system.
-                    <br><br>
-                    We found out that although park goers do not have a strong desire to make on-the-spot reservations, they do want to know about the rules for using a facility and whether or not the facility has been reserved. This type of information helps them avoid conflict with other park goers and makes them feel more confident using park facilities.
-                    <br><br>
-                    We decided to move forward with using QR codes and NFCs as a touchpoint for delivering information to park goers because it's technically simple to implement and doesn't add additional signage to the parks.
-                    </p>
+                      Through early prototyping and concept testing, we explored several ideas for improving awareness of the reservation system for in-person park goers. One idea was to distribute zines that inform people about how to reserve park facilities. Another idea was adding maps to the parks that support wayfinding and inform park goers about the reservation system. Another idea was putting up signs with QR codes or phone numbers that allow users to make reservations on the spot and be informed about the reservation system.
+                      <br><br>
+                      We found out that although park goers do not have a strong desire to make on-the-spot reservations, they do want to know about the rules for using a facility and whether or not the facility has been reserved. This type of information helps them avoid conflict with other park goers and makes them feel more confident using park facilities.
+                      <br><br>
+                      We decided to move forward with using QR codes and NFCs as a touchpoint for delivering information to park goers because it's technically simple to implement and doesn't add additional signage to the parks.
+                      </p>
                 </div>
             </section>
 
@@ -315,35 +327,100 @@
         </section>
       
         <section id="web-redesign" class="solution-section" style="display: none;">
-            <h1>Web Redesign</h1>
-            <p>Coming soon...</p>
+            <!-- Website Content -->
+            <section class="web-content">
+                <h2>Website Content Guidelines and Redesign</h2>
+                <p>
+                We created a set of actionable guidelines and sample redesigns to help SFRPD create a more usable, accessible, and trustworthy website. These recommendations can be implemented within CivicPlus and aim to reduce confusion and customer support burden.
+                </p>
+            
+                <h3>Style Guidelines</h3>
+                <p>
+                According to CSS Stats, the Picnic Rentals page uses 93 unique colors, 60 unique font sizes, and 26 unique font families. We recommend consolidating these into a single style guide that includes visual identity, layout templates, UI components, and writing tone to ensure consistency across departments.
+                </p>
+            
+                <h3>Style Guide Components</h3>
+                <ul class="styled-list">
+                <li><strong>Visual Identity:</strong> Logo usage, color palette, typography, and header hierarchy.</li>
+                <li><strong>Content Structure:</strong> Page templates, information architecture, and content sections.</li>
+                <li><strong>UI Elements:</strong> Button and link styles, forms, navigation consistency.</li>
+                <li><strong>Content Guidelines:</strong> Tone, voice, and terminology.</li>
+                </ul>
+            
+                <h3>Accessibility Guidelines</h3>
+                <p>As a government agency, SFRPD must follow accessibility standards. We highlighted key policies and implementation practices that benefit all users.</p>
+            
+                <ul class="styled-list">
+                <li><strong>Section 508:</strong> Federal electronic accessibility standards.</li>
+                <li><strong>California Code 7405 & 11135:</strong> State-level accessibility mandates.</li>
+                <li><strong>WCAG 2.2:</strong> Global standards for making digital content usable for people with disabilities.</li>
+                </ul>
+            
+                <h3>Accessibility Best Practices</h3>
+                <ul class="styled-list">
+                <li><strong>Provide Alt Text:</strong> Ensure all meaningful images include alt attributes.</li>
+                <li><strong>High Contrast:</strong> Maintain 4.5:1 contrast ratio for text visibility.</li>
+                <li><strong>Sufficient Font Size:</strong> Body text should be at least 16px.</li>
+                <li><strong>Label Form Fields:</strong> Use programmatic labels for all inputs.</li>
+                <li><strong>Keyboard Navigation:</strong> Ensure users can navigate via Tab, Enter, and Arrow keys.</li>
+                <li><strong>Heading Structure:</strong> Use consistent H1–H3 hierarchy.</li>
+                <li><strong>No Layout Tables:</strong> Use CSS for page structure instead of table-based layouts.</li>
+                </ul>
+            
+                <h3>Guidelines for Using CivicPlus Widgets</h3>
+                <ul class="styled-list">
+                <li><strong>Editor:</strong> WYSIWYG for formatted content (headlines, lists, media).</li>
+                <li><strong>Image:</strong> Static image with alt text.</li>
+                <li><strong>Slideshow:</strong> Visual carousel for headers and galleries.</li>
+                <li><strong>Related Documents:</strong> Downloadable file lists (e.g., PDFs, forms).</li>
+                <li><strong>Pages:</strong> Auto-generated list of subpages.</li>
+                <li><strong>Spacer:</strong> Adds vertical white space.</li>
+                <li><strong>Tabbed:</strong> Collapsible or interactive info panels.</li>
+                <li><strong>List:</strong> Structured, styled item listings.</li>
+                </ul>
+            
+                <h3>Example Redesigns</h3>
+                <p><strong>Picnic Rentals Page:</strong> Should include general policies (e.g., coyote warnings, fees, changes, jumpers). Place critical info at the top. Consider embedded maps via Esri widget (if CivicPlus tier supports it).</p>
+                <p><strong>Picnic Details Page:</strong> Tailored to each site. Include amenities, alcohol policy, and visual map. Remove redundant info already shown on the Rentals page.</p>
+            
+                <h3>Next Steps</h3>
+                <ul class="styled-list">
+                <li><strong>Audit & Prioritize:</strong> Identify and prioritize high-traffic pages for redesign.</li>
+                <li><strong>Develop Templates:</strong> Create standard CivicPlus templates (e.g., Rentals, Detail pages).</li>
+                <li><strong>Train Staff:</strong> Ensure editors are trained on guidelines and best practices.</li>
+                </ul>
+            </section>
+  
+  
+            
         </section>
 
         <section id="chatbot" class="solution-section" style="display: none;">
-            <section class="solution-header">
-                <div class="icon-and-title">
+            <div class="solution-header">
+              <div class="icon-and-title">
                 <span class="icon">💬</span>
                 <h1>Chatbot</h1>
-                </div>
-                <p class="subtitle">
+              </div>
+              <p class="subtitle">
                 Testing and Ideal Chatbot Design – What we found from testing the chatbot that SFRPD purchased from their website vendor, CivicPlus, and our design of an ideal chatbot that addresses the gaps.
-                </p>
-            </section>
+              </p>
+            </div>
             
             <section class="solution-overview">
-                <h2>Overview</h2>
-                <p>
-                Since the start of this project, SFRPD has expressed interest in implementing an AI chatbot offered by CivicPlus to address the issue of poor website usability. They asked our team to test the performance of this chatbot in a sandbox environment so that they can request improvements from the vendor.
-                </p>
-                <p>
-                Our chatbot testing revealed critical gaps between current chatbot capabilities and service delivery requirements, while our design of an ideal chatbot demonstrates the functionalities that a chatbot should be able to perform in order to be truly useful for users and staff.
-                </p>
+              <h2>Overview</h2>
+              <p>
+              Since the start of this project, SFRPD has expressed interest in implementing an AI chatbot offered by CivicPlus to address the issue of poor website usability. They asked our team to test the performance of this chatbot in a sandbox environment so that they can request improvements from the vendor.
+              </p>
+              <p>
+              Our chatbot testing revealed critical gaps between current chatbot capabilities and service delivery requirements, while our design of an ideal chatbot demonstrates the functionalities that a chatbot should be able to perform in order to be truly useful for users and staff.
+              </p>
             </section> 
             
-            <section class="metrics chatbot">
-                <h2>Chatbot Testing</h2>
-              
-                <div class="white-card">
+            <section class="section-block">
+              <h2>Chatbot Testing</h2>
+            
+              <div class="card-group">
+                <div class="process-card">
                   <h3>Testing Approach</h3>
                   <p>
                     We initially came up with a systematic evaluation method with metrics across five criteria. However, once we saw how limited the current chatbot's capabilities are, we realized that a detailed numerical assessment wouldn't be useful for SFRPD.
@@ -352,47 +429,338 @@
                     Instead, we decided to identify basic performance gaps through 40+ test scenarios covering the most common user inquiries.
                   </p>
                 </div>
+              </div>
               
-                <h3 class="findings-title">Testing Findings</h3>
+              <h3 class="findings-title">Testing Findings</h3>
+            
+              <ul class="failure-list">
+                <li>
+                  <strong>❌ Failure to Handle Basic Inquiries</strong><br>
+                  When asked about picnic permits through the "quick question" feature provided, the chatbot responded: "I'm having trouble finding an answer."
+                </li>
+                <li>
+                  <strong>💬 Failure to Provide Consistent Responses</strong><br>
+                  When asked "How do I make a picnic permit?", the chatbot was able to respond correctly, but it failed to provide an answer for "How do I reserve a picnic area?" even though they're the same question.
+                </li>
+                <li>
+                  <strong>🎯 Failure to Provide Accurate Answers</strong><br>
+                  When asked to recommend a picnic site in Golden Gate Park, the chatbot recommended Golden Gate Heights Picnic Area, which is an entirely different park.
+                </li>
+                <li>
+                  <strong>☁️ Failure to Retain Context</strong><br>
+                  When asked "How much does it cost?" after correctly answering "How do I reserve an athletic field", the chatbot provided unrelated costs, failing to retain context.
+                </li>
+                <li>
+                  <strong>📅 Failure to Provide Up-to-Date Information</strong><br>
+                  When asked if a park had restrooms, the chatbot referenced a Taskforce Restroom Report from 2009.
+                </li>
+                <li>
+                  <strong>🔗 Failure to Provide Correct Links</strong><br>
+                  When asked about availability, the chatbot linked to a "Tentative Calendar for Special Events" instead of the proper ActiveNet availability calendar.
+                </li>
+                
+                <li class="implication-item">
+                  <div class="implication-box">
+                    <h3>Testing Implications</h3>
+                    <p>
+                      The testing reinforced our stance that the effectiveness of a chatbot is entirely dependent on the quality of the content that it's based off of.
+                      Poor information architecture directly translates to unreliable chatbot performance.
+                    </p>
+                    <p>
+                      Given the limited capabilities of the CivicPlus chatbot, it's unlikely to significantly reduce the volume of phone calls and emails to staff.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
               
-                <ul class="failure-list">
-                  <li>
-                    <strong>❌ Failure to Handle Basic Inquiries</strong><br>
-                    When asked about picnic permits through the "quick question" feature provided, the chatbot responded: "I'm having trouble finding an answer."
-                  </li>
-                  <li>
-                    <strong>💬 Failure to Provide Consistent Responses</strong><br>
-                    When asked "How do I make a picnic permit?", the chatbot was able to respond correctly, but it failed to provide an answer for "How do I reserve a picnic area?" even though they're the same question.
-                  </li>
-                  <li>
-                    <strong>🎯 Failure to Provide Accurate Answers</strong><br>
-                    When asked to recommend a picnic site in Golden Gate Park, the chatbot recommended Golden Gate Heights Picnic Area, which is an entirely different park.
-                  </li>
-                  <li>
-                    <strong>☁️ Failure to Retain Context</strong><br>
-                    When asked "How much does it cost?" after correctly answering "How do I reserve an athletic field", the chatbot provided unrelated costs, failing to retain context.
-                  </li>
-                  <li>
-                    <strong>📅 Failure to Provide Up-to-Date Information</strong><br>
-                    When asked if a park had restrooms, the chatbot referenced a Taskforce Restroom Report from 2009.
-                  </li>
-                  <li>
-                    <strong>🔗 Failure to Provide Correct Links</strong><br>
-                    When asked about availability, the chatbot linked to a "Tentative Calendar for Special Events" instead of the proper ActiveNet availability calendar.
-                  </li>
-                </ul>
+
+
             </section>
+          
+            
+            <section class="ideal-chatbot">
+                <h2>💬 Ideal Chatbot</h2>
+                <p class="section-description">
+                  We designed an ideal chatbot demonstrating the capabilities and use cases that the current chatbot should be able to perform but is lacking.
+                </p>
+              
+                <h4 class="capability-subheading">Capabilities</h4>
+                <p class="capability-intro">
+                  Our ideal chatbot has four primary capabilities handled through structured conversational formats:
+                </p>
+              
+                <div class="capability-grid">
+                  <div class="capability-card">
+                    <div class="capability-number">01</div>
+                    <h5>Information Gathering</h5>
+                    <p>
+                      Handles information gathering by answering frequently asked questions about policies, fees, and cancellations and explaining reservation and permit processes step-by-step.
+                    </p>
+                  </div>
+                  <div class="capability-card">
+                    <div class="capability-number">02</div>
+                    <h5>Real-Time Availability</h5>
+                    <p>
+                      Allows users to check facility availability in real-time, including which sites are available on specific dates and which dates specific sites are available.
+                    </p>
+                  </div>
+                  <div class="capability-card">
+                    <div class="capability-number">03</div>
+                    <h5>Booking Facilitation</h5>
+                    <p>
+                      Facilitates the entire booking process up to actual payment. This includes collecting user information about desired picnic location, date, attendee numbers, and amenities to provide filtered site options.
+                    </p>
+                  </div>
+                  <div class="capability-card">
+                    <div class="capability-number">04</div>
+                    <h5>Post-Booking Self-Service</h5>
+                    <p>
+                      Provides post-booking self-service options including checking application status, modifying and cancelling reservations within allowed timeframes, and initiating refunds.
+                    </p>
+                  </div>
+                </div>
+            </section>
+
+            <section class="chatbot-comparison">
+                <div class="free-form">
+                  <h4>Free-Form Conversation</h4>
+                  <p>
+                    Beyond structured conversations, the chatbot handles user inquiries through free-form conversation, enabling users to ask any question within the chatbot's domain and receive accurate, relevant answers.
+                  </p>
+                </div>
+              
+                <h4 class="comparison-title">How It's Different from CivicPlus' Chatbot</h4>
+              
+                <div class="comparison-grid">
+                  <div class="comparison-box current">
+                    <h5>⚠️ Current CivicPlus Chatbot</h5>
+                    <ul>
+                      <li>⚠️ Can only read content on SFRPD's public-facing website</li>
+                      <li>⚠️ Performs basic information gathering only</li>
+                      <li>⚠️ No integration with reservation systems</li>
+                      <li>⚠️ Static, outdated information</li>
+                      <li>⚠️ Limited conversational context</li>
+                    </ul>
+                  </div>
+              
+                  <div class="comparison-box ideal">
+                    <h5>✅ Our Ideal Chatbot</h5>
+                    <ul>
+                      <li>✅ Integrates directly with third-party reservation systems</li>
+                      <li>✅ Real-time data synchronization</li>
+                      <li>✅ Active role in facilitating bookings</li>
+                      <li>✅ Supports comprehensive self-service</li>
+                      <li>✅ Handles high-frequency, low-medium complexity interactions</li>
+                    </ul>
+                  </div>
+                </div>
+            </section>
+              
               
                        
         </section>
 
-      <section id="rfp" class="solution-section" style="display: none;">
-        <h1>RFP</h1>
-        <p>Coming soon...</p>
-      </section>
+        <!-- RFP Section -->
+        <section id="rfp" class="solution-section" style="display: none;">
+            <!-- RFP Section Header -->
+            <div class="solution-header">
+                <div class="icon-and-title">
+                <span class="icon">📄</span>
+                <h1>RFP Requirements and Ideal Reservation System Design</h1>
+                </div>
+                <p class="subtitle">
+                An RFP planning document that includes requirements for a third-party reservation system and a design of an ideal reservation system, meant to guide SFRPD in finding the right vendor.
+                </p>
+            </div>
+
+            <!-- Final Solution Section -->
+            <section class="implementation">
+                <h2>The Final Solution</h2>
+                <div class="feature-cards">
+                
+                    <div class="feature-card">
+                        <span class="feature-icon">📄</span>
+                        <h3>RFP Suggestions Document</h3>
+                        <p>Comprehensive planning document with functional requirements and vendor specifications</p>
+                    </div>
+                
+                    <div class="feature-card">
+                        <span class="feature-icon">📄</span>
+                        <h3>Ideal Reservation System Prototype</h3>
+                        <p>Interactive design demonstrating the vision for a modern, user-centered reservation system</p>
+                    </div>
+            
+                </div>
+            </section>
+
+            <!-- RFP Overview Section -->
+            <section class="solution-overview">
+                <div class="container">
+                    <h2>Overview</h2>
+                    <p>
+                        With SFRPD's current contract with ActiveNet ending, we saw a critical opportunity to rethink and redesign their fragmented reservation infrastructure. Our goal was to create a clear, consolidated vision for what a modern, user-centered reservation system that reduces confusion, supports diverse users, and empowers staff could look like.
+                    </p>
+                    <p>
+                        We delivered a comprehensive RFP planning document that outlines functional requirements for a web-based reservation system, user-facing features (interactive maps, smart search filters, real-time booking, mobile responsiveness etc.), and administrative tools for managing bookings, processing payments, resolving conflicts, and generating usage reports.
+                    </p>
+                    <p>
+                        The plan also includes integration requirements with CivicPlus, GIS mapping, and secure payment portals, as well as support and training plans to ensure smooth onboarding and long-term system success. Together, these suggestions help SFRPD clearly articulate what they need in a new vendor while staying grounded in the lived experiences of both users and staff.
+                    </p>
+                </div>
+            </section>
+  
+            <section class="ideal-chatbot">
+                <h2>📝 Writing Process</h2>
+                <p class="section-description">
+                  Some notable parts of the writing process include:
+                </p>
+              
+                <div class="capability-grid">
+                  <!-- Row 1 -->
+                  <div class="capability-card">
+                    <div class="capability-number">01</div>
+                    <h5>Clarifying Stakeholder Needs</h5>
+                    <p>
+                      To ensure the system meets a wide range of real-world needs, we mapped the pain points of each stakeholder group - from overwhelmed call center staff and confused first-time users, to mobile-first park visitors and program instructors.
+                    </p>
+                  </div>
+              
+                  <div class="capability-card">
+                    <div class="capability-number">02</div>
+                    <h5>Studying Platform Fragmentation</h5>
+                    <p>
+                      We identified how the disjointed use of multiple platforms (e.g. CivicPlus, ActiveNet, Rec.us) created confusion and inefficiencies. This reinforced the need for a single integrated system that reduces redirects and repeated logins.
+                    </p>
+                  </div>
+              
+                  <div class="capability-card">
+                    <div class="capability-number">03</div>
+                    <h5>Balancing Public vs. Staff Functions</h5>
+                    <p>
+                      We made sure to define not just user-facing features like smart filters or payment tools, but also backend needs like admin dashboard, pricing logic, conflict resolution tools, and logging capability.
+                    </p>
+                  </div>
+              
+                  <!-- Row 2 -->
+                  <div class="capability-card">
+                    <div class="capability-number">04</div>
+                    <h5>Planning for Edge Cases and Accessibility</h5>
+                    <p>
+                      Throughout, we considered edge cases. What happens during site closures? Can users easily cancel or edit their reservations? Does the interface support low digital-literacy users or non-English speakers?
+                    </p>
+                  </div>
+              
+                  <div class="capability-card">
+                    <div class="capability-number">05</div>
+                    <h5>Ensuring Long Term Sustainability</h5>
+                    <p>
+                      Beyond features, we included expectations around implementation, staff training, technical support, and accessibility to ensure the solution is practical and maintainable.
+                    </p>
+                  </div>
+                </div>
+            </section>
+            
+            <section class="solution-overview">
+                <div class="container">
+                  <h2>🛠️ Key Iteration Notes</h2>
+                  <p>
+                    After feedback from faculty mentors, we reflected critically on the scope and structure of our RFP document. 
+                    The mentors noted that the RFP served as a comprehensive summary of our research and understanding of the current ecosystem, 
+                    including user needs, feature requirements, and stakeholder relationships.
+                  </p>
+              
+                  <h4>Initial Challenge</h4>
+                  <div class="quote-box">
+                    <em>However, it remained, at that stage, largely a list of features without prioritization or concrete design explorations.</em>
+                  </div>
+                </div>
+            </section>
+
+            <section class="ideal-chatbot">
+                <h2>✅ Key Improvements Made</h2>
+                
+                <div class="capability-grid">
+                <div class="capability-card">
+                    <div class="capability-number">01</div>
+                    <h5>Feature Prioritization</h5>
+                    <p>
+                    We prioritized features to distinguish core functionality from enhancements, helping vendors understand what’s essential versus nice-to-have.
+                    </p>
+                </div>
+                
+                <div class="capability-card">
+                    <div class="capability-number">02</div>
+                    <h5>Sample Design Development</h5>
+                    <p>
+                    We developed sample designs for selected high-impact features to demonstrate critical functionality in its ideal state.
+                    </p>
+                </div>
+            
+                <div class="capability-card">
+                    <div class="capability-number">03</div>
+                    <h5>Current System Shortcomings</h5>
+                    <p>
+                    The document was edited to explicitly address shortcomings of the current system, as identified by our client, positioning vendors to propose targeted solutions.
+                    </p>
+                </div>
+                </div>
+            </section>
+
+            <!-- Refinement Outcome -->
+            <section class="implementation">
+                <h2>Refinement Outcome</h2>
+                <p>
+                By surfacing these challenges, the RFP positions future vendors to propose solutions that directly respond to end-user frustrations and operational inefficiencies.
+                <br><br>
+                These refinements aim to give prospective vendors a clear picture of the challenges to be solved while setting expectations for improved user experience and system cohesion.
+                </p>
+            </section>
+
+            <!-- Impact and Value -->
+            <section class="metrics">
+                <h2>Impact and Value</h2>
+                <p>Here’s how our RFP document delivers meaningful value to SFRPD:</p>
+            
+                <ul class="metric-list">
+                    <li>
+                        <strong>Clear vendor communication:</strong>
+                        Provides SFRPD with a structured way to communicate their needs to potential vendors, reducing misunderstandings and ensuring proposals address real user problems.
+                    </li>
+                    <li>
+                        <strong>Research-grounded requirements:</strong>
+                        All requirements are based on extensive user research, staff interviews, and system analysis, ensuring the new system addresses actual pain points rather than assumed needs.
+                    </li>
+                    <li>
+                        <strong>Future-focused vision:</strong>
+                        The ideal system design provides a concrete vision for what success looks like, helping SFRPD evaluate vendor proposals against a clear standard.
+                    </li>
+                    <li>
+                        <strong>Operational efficiency:</strong>
+                        By addressing current system fragmentation and staff workflow issues, the new system will significantly reduce manual work and improve service delivery.
+                    </li>
+                </ul>
+            </section>
+  
+        </section>
+
+      
     </main>
   </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-info">The work and knowledge gained from this project are only intended to be applicable to the company and context involved and there is no suggestion or indication that it may be useful or applicable to others. This project was conducted for educational purposes and is not intended to contribute to generalizable knowledge.</p>
+      <p class="footer-copy">© 2025 CMU MHCI Capstone</p>    
+    </div>
+    <div class="footer-logos">
+      <img src="images/hcii-logo.png" alt="HCII Logo"/>
+      <span class="footer-x">x</span>
+      <img src="images/sfrpd-logo.jpg" alt="SFRPD Logo"/>
+    </div>
+  </footer>
 
   <script src="solution.js"></script>
 </body>
 </html>
+

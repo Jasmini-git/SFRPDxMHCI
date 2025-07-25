@@ -1,12 +1,13 @@
 body {
     margin: 0;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: 'Figtree', sans-serif;
     background-color: #f7f9fc;
     color: #1a1a1a;
   }
-
+  
   .solution-container {
     display: flex;
+
   }
 
   .solution-hero {
@@ -78,7 +79,6 @@ body {
 
   .solution-nav li.active {
     background-color: #e5e9ff;
-    border-left: 4px solid #4f66ff;
   }
 
   .solution-nav li strong {
@@ -107,10 +107,8 @@ body {
 
   .solution-header {
     background-color: #f6f9ff;
-    padding: 60px 24px 40px;
+    padding: 30px 24px 40px;
     border-radius: 12px;
-    margin-bottom: 32px;
-    border: 1px solid #e0e6f0;
   }
 
   .solution-header .icon-and-title {
@@ -134,10 +132,9 @@ body {
 
   .solution-overview {
     padding: 40px 24px;
-    background-color: #ffffff;
     border-radius: 12px;
-    border: 1px solid #e0e0e0;
   }
+
 
   .solution-overview h2 {
     border-left: 4px solid #4c6ef5;
@@ -167,6 +164,12 @@ body {
     margin-bottom: 24px;
   }
 
+  .section-block {
+    padding: 40px 24px;
+    border-radius: 12px;
+  }
+
+
   .feature-cards {
     display: flex;
     gap: 20px;
@@ -175,7 +178,7 @@ body {
 
   .feature-card {
     flex: 1 1 250px;
-    background-color: #f9fbfe;
+    background-color: #ffffff;
     border-radius: 12px;
     padding: 20px;
     border: 1px solid #e0e6f0;
@@ -196,7 +199,6 @@ body {
 
   .design-process {
     padding: 3rem 2rem;
-    max-width: 800px;
     margin: 0 auto;
   }
 
@@ -211,9 +213,7 @@ body {
   .process-card {
     background: #f9f9fb;
     border-radius: 10px;
-    padding: 1.8rem;
     margin-bottom: 2rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
   }
 
   .process-card h3 {
@@ -233,7 +233,7 @@ body {
     color: white;
     padding: 1rem 1.2rem;
     border-radius: 10px;
-    font-weight: 500;
+    line-height: 1.6;
     font-size: 16px;
     margin-top: 1rem;
   }
@@ -241,7 +241,6 @@ body {
   .implementation,
   .metrics {
     padding: 3rem 2rem;
-    max-width: 800px;
     margin: 0 auto;
   }
 
@@ -294,14 +293,12 @@ body {
 
 
   .design-decisions {
-    padding: 60px 0;
     background-color: #f9fafb;
   }
   
   .design-decisions .container {
-    max-width: 1100px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding:48px 32px;
   }
   
   .design-decisions h2 {
@@ -366,8 +363,7 @@ body {
   }
   
   .failure-list li {
-    background-color: #fff7ed;
-    border-left: 4px solid #fbbf24;
+    background-color: #ffffff;
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 8px;
@@ -376,3 +372,213 @@ body {
     color: #333;
   }
   
+  .section-block h2 {
+    font-size: 24px;
+    color: #1a1a1a;
+    padding-left: 10px;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    border-left: 4px solid #5b6ee1; /* 요 줄이 중요해! */
+  }
+
+  .implication-item {
+    background: linear-gradient(to right, #6366f1, #8b5cf6);
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+    color: #ffffff !important;
+  }
+  
+  .implication-item h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .implication-item p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+  }
+  .ideal-chatbot {
+    margin: 0;
+    padding: 3rem 2rem 0rem;
+  }
+  
+  .ideal-chatbot h2 {
+    font-size: 24px;
+    color: #1a1a1a;
+    font-weight: 600;
+    border-left: 4px solid #5b6ee1;
+    padding-left: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .section-description {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 2rem;
+  }
+  
+  .capability-subheading {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+  
+  .capability-intro {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 1.5rem;
+  }
+  
+  .capability-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .capability-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  }
+  
+  .capability-number {
+    background-color: #7c3aed;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 4px 12px;
+    display: inline-block;
+    border-radius: 50px;
+    margin-bottom: 0.8rem;
+  }
+  
+  .capability-card h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+  }
+  
+  .capability-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #444;
+  }
+
+  .chatbot-comparison {
+    padding: 3rem 2rem;
+  }
+  
+  .free-form h4 {
+    font-size: 16px;
+    font-weight: 600;
+    border-left: 4px solid #10b981;
+    padding-left: 10px;
+    margin-bottom: 0.6rem;
+  }
+  
+  .free-form p {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 2rem;
+  }
+  
+  .comparison-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .comparison-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .comparison-box {
+    flex: 1 1 380px;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  }
+  
+  .comparison-box h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .comparison-box ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .comparison-box li {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+  
+  .comparison-box.current {
+    background-color: #fff7ed;
+    border: 2px solid #fbbf24;
+  }
+  
+  .comparison-box.current h5 {
+    color: #b45309;
+  }
+  
+  .comparison-box.ideal {
+    background-color: #f0fdf4;
+    border: 2px solid #34d399;
+  }
+  
+  .comparison-box.ideal h5 {
+    color: #047857;
+  }
+  
+  .web-content {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #333;
+}
+
+.web-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.web-content h3 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.web-content p {
+  margin: 1rem 0;
+}
+
+.styled-list {
+  margin-left: 1rem;
+  padding-left: 1rem;
+}
+
+.styled-list li {
+  margin-bottom: 0.8rem;
+  list-style-type: disc;
+}
+
+.chatbot-testing {
+  margin: 0 auto;
+  padding: 60px 24px;
+}

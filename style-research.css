@@ -1,409 +1,492 @@
+body {
+  font-family: 'Figtree', sans-serif;
+  background-color: #f2f2f2;
+  color: #1a1a1a;
+}
+
+
+/* HERO */
 .research-hero {
-    background: linear-gradient(to right, #6a85f1, #a777e3);
-    color: white;
-    padding: 120px 20px 80px 20px;
-    text-align: center;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  align-items: center;
+  min-height: 60vh; 
+  padding: 40px 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("images/interview.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  font-family: 'Figtree', sans-serif;
+}
+
+.hero-content {
+  max-width: 960px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+
+.hero-text {
+  margin-bottom: 40px;
   
-  .research-hero h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-  
-  .research-hero p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 18px;
-    line-height: 1.6;
-  }
-  
-/* Research Stats */
+}
+
+.research-hero h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.research-hero p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
 .research-stats {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 48px;
-    padding: 60px 20px 40px;
-    background-color: #fff;
-    flex-wrap: wrap;
-  }
-  
-  .stat-item {
-    text-align: center;
-  }
-  
-  .stat-item h3 {
-    font-size: 28px;
-    color: #6a85f1;
-    margin-bottom: 8px;
-  }
-  
-  .stat-item p {
-    font-size: 14px;
-    color: #444;
-    margin: 0;
-  }
-  
-  .context-section {
-    padding: 80px 40px;
-    background-color: #f9f9f9;
-    text-align: center;
-  }
-  
-  .context-intro h2 {
-    font-size: 28px;
-    margin-bottom: 12px;
-  }
-  
-  .context-intro p {
-    font-size: 18px;
-    max-width: 800px;
-    margin: 0 auto 40px;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  /* 숫자 박스 */
-  .context-stats {
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    padding: 40px;
-    background-color: #f1f2f8;
-    border-radius: 12px;
-    margin-bottom: 60px;
-    flex-wrap: wrap;
-  }
-  
-  .context-stat h3 {
-    font-size: 28px;
-    color: #6a85f1;
-    margin-bottom: 4px;
-  }
-  
-  .context-stat p {
-    font-size: 13px;
-    color: #555;
-    margin: 0;
-  }
-  
-  /* 아래 3개 박스 */
-  .context-columns {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    text-align: left;
-    flex-wrap: wrap;
-  }
-  
-  .context-block {
-    max-width: 300px;
-  }
-  
-  .context-block h4 {
-    font-size: 18px;
-    margin-bottom: 6px;
-    border-bottom: 2px solid #6a85f1;
-    display: inline-block;
-    padding-bottom: 4px;
-    color: #1a1a1a;
-  }
-  
-  .context-block p {
-    font-size: 14px;
-    color: #444;
-    line-height: 1.6;
-  }
-  
-  .challenge-section {
-    background: #f7f8fa;
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .challenge-section h2 {
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 24px;
-    color: #1a1a1a;
-  }
-  
-  .challenge-summary {
-    max-width: 800px;
-    margin: 0 auto 40px;
-    background: #fff;
-    padding: 24px 32px;
-    border-radius: 12px;
-    border-left: 4px solid #5c6ac4;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-    text-align: left;
-  }
-  
-  .challenge-summary p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  .challenge-summary strong {
-    color: #111;
-  }
-  
-  .challenge-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-  
-  .challenge-card {
-    flex: 1 1 280px;
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    border-top: 5px solid #dcdffa;
-    transition: transform 0.2s ease;
-    text-align: left;
-  }
-  
-  .challenge-card:hover {
-    transform: translateY(-4px);
-  }
-  
-  .challenge-card h3 {
-    font-size: 18px;
-    color: #3c3c50;
-    margin-bottom: 12px;
-  }
-  
-  .challenge-card p {
-    font-size: 14px;
-    color: #444;
-    line-height: 1.6;
-  }
-  
-  @media (max-width: 900px) {
-    .challenge-cards {
-      flex-direction: column;
-      align-items: stretch;
-    }
-  }
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+  flex-wrap: wrap;
+  background-color: transparent;
+}
+
+.stat-item h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.stat-item p {
+  font-size: 14px;
+}
 
 
-  /* Process Section */
-  .process-section {
-    padding: 60px 20px;
-    background-color: #f7f7f7;
-    text-align: center;
-  }
-  
-  .instruction {
-    margin-bottom: 24px;
-    color: #555;
-  }
-  
-  .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    max-width: 960px;
-    margin: 0 auto;
-  }
-  
-  /* Card Styles */
-  .info-card {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-    text-align: left;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border: 1px solid #eee;
-    position: relative;
-  }
-  
-  .info-card:hover {
-    border-color: #a3bffa;
-  }
-  
-  .info-card h3 {
-    margin-bottom: 8px;
-    font-size: 16px;
-  }
-  
-  .card-detail {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease, opacity 0.4s ease;
-    opacity: 0;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  
-  .info-card.expanded {
-    background-color: #6a85f1;
-    color: white;
-  }
-  
-  .info-card.expanded .card-detail {
-    max-height: 200px;
-    opacity: 1;
-    margin-top: 10px;
-  }
-  
-  .info-card.expanded h3 {
-    color: white;
-  }
-  
-/* 세로 Auto Layout */
+.context-section {
+  background-color: #f6f7fc;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title-wrapper {
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+}
+
+.section-title-wrapper h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.section-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.section-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.context-stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.context-stat h3 {
+  font-size: 28px;
+  color: #4d6cff;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.context-stat p {
+  font-size: 14px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.context-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  text-align: left;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.context-block {
+  flex: 1;
+  min-width: 280px;
+}
+
+.context-block h4 {
+  font-size: 18px;
+  font-weight: 700;
+  border-bottom: 2px solid #4d6cff;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.context-block p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.challenge-section {
+  background: #f7f8fa;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.challenge-section h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #1a1a1a;
+}
+
+.challenge-section .challenge-text {
+  max-width: 960px;
+  margin: 0 auto 48px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  padding: 0 20px;
+}
+
+.challenge-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.challenge-card {
+  flex: 1 1 280px;
+  max-width: 300px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  text-align: left;
+  border: 1px solid #e5e5e5;
+}
+
+
+
+.challenge-card:hover {
+  transform: translateY(-4px);
+}
+
+.challenge-card h3 {
+  font-size: 18px;
+  color: #3c3c50;
+  margin-bottom: 12px;
+}
+
+.challenge-card p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.process-section {
+  background: #f7f8fa;
+  text-align: center;
+}
+
+.process-section h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #1a1a1a;
+}
+
+.instruction {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 48px;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+
+.info-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 1px solid #eee;
+  position: relative;
+}
+
+.info-card:hover {
+  border-color: #a3bffa;
+}
+
+.info-card h3 {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.card-detail {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.info-card .card-detail {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.info-card.expanded .card-detail {
+  max-height: 500px; /* 또는 충분히 큰 값 */
+}
+
+
+.info-card.expanded h3 {
+  color: white;
+}
+
 .insights-section {
-    padding: 80px 40px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    align-items: center;
-    text-align: center;
-  }
-  
-  /* 가로로 이미지 + 카드 나열 */
-  .insights-flex-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 60px;
-  }
-  
-  
-  /* 왼쪽 이미지 */
-  .insight-image img {
-    width: 400px;
-    height: auto;
-    border-radius: 12px;
-    object-fit: cover;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-  }
-  
-  /* 오른쪽 카드 전체 영역 */
-  .insight-list {
-    flex: 1;
-    max-width: 600px;
-    text-align: left;
-  }
-  
-  .insight-list h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-  }
-  
-  .section-subtitle {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 32px;
-  }
-  
-  .insight-card {
-    background: #f9f9f9;
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 16px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    border: 1px solid #e0e0e0;
-    cursor: pointer;
-    transition: border-color 0.3s ease, background-color 0.3s ease;
-    
-  }
-  
-  .insight-card:hover {
-    border-color: #a3bffa;
-  }
-  
-  .card-header {
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-  }
-  
-  .card-header p {
-    margin: 0;
-    font-size: 15px;
-    color: #333;
-  }
-  
-  .icon {
-    font-size: 22px;
-    margin-top: 2px;
-  }
-  
-  .card-content {
-    margin-top: 12px;
-    font-size: 14px;
-    color: #444;
-    line-height: 1.6;
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-  }
-  
-  .insight-card.expanded {
-    border-color: #6a85f1;
-    background-color: #eef2ff;
-  }
-  
-  .insight-card.expanded .card-content {
-    max-height: 300px;
-    opacity: 1;
-  }
-  
-/* How Might We Section */
+  padding: 80px 40px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  text-align: center;
+}
+
+.insights-flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.insight-image img {
+  width: 400px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.insight-list {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.insight-title-wrapper h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #1a1a1a;
+}
+
+.insight-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.insight-card:hover {
+  border-color: #a3bffa;
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-header p {
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.card-content {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #444;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.icon {
+  display: none; /* 이모지 제거 */
+}
+
+
+.insight-card.expanded {
+  border-color: #6a85f1;
+  background-color: #eef2ff;
+}
+
+.insight-card.expanded .card-content {
+  max-height: 300px;
+  opacity: 1;
+}
+
 .hmw-section {
-    background-color: #f9fafc;
-    padding: 80px 20px;
-    text-align: center;
-  }
-  
-  .hmw-section h2 {
-    font-size: 28px;
-    margin-bottom: 40px;
-  }
-  
-  .hmw-list {
-    list-style: none;
-    padding: 0;
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
+  background-color: #f9fafc;
+  padding: 80px 20px 100px;
+  text-align: center;
+}
+
+.hmw-section h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.hmw-list {
+  list-style: none;
+  padding: 0;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hmw-list li {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  gap: 16px;
+}
+
+.hmw-number {
+  background-color: #6a85f1;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  font-size: 14px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+
+.hmw-list p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .insights-flex-wrapper {
     flex-direction: column;
-    gap: 32px;
+    align-items: center;
   }
-  
-  .hmw-list li {
-    display: flex;
-    align-items: flex-start;
-    text-align: left;
-    gap: 16px;
+
+  .insight-image img {
+    width: 100%;
+    max-width: 360px;
   }
-  
-  .hmw-number {
-    background-color: #6a85f1;
-    color: white;
-    font-weight: bold;
-    border-radius: 50%;
-    padding: 8px 12px;
-    font-size: 14px;
-    min-width: 32px;
-    text-align: center;
-    display: inline-block;
+
+  .context-columns {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .hmw-list p {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
+
+  .challenge-cards {
+    flex-direction: column;
+    align-items: stretch;
   }
-  
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.context-intro {
+  padding: 80px 20px 40px;
+  text-align: center;
+  font-family: 'Figtree', sans-serif;
+}
+
+.context-intro h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #1a1a1a;
+}
+
+.context-description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
