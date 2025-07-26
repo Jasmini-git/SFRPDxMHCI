@@ -328,69 +328,314 @@
       
         <section id="web-redesign" class="solution-section" style="display: none;">
             <!-- Website Content -->
-            <section class="web-content">
-                <h2>Website Content Guidelines and Redesign</h2>
-                <p>
-                We created a set of actionable guidelines and sample redesigns to help SFRPD create a more usable, accessible, and trustworthy website. These recommendations can be implemented within CivicPlus and aim to reduce confusion and customer support burden.
+              <!-- Web Redesign Section Header -->
+              <div class="solution-header">
+                <div class="icon-and-title">
+                  <span class="icon">🌐</span>
+                  <h1>Website Content Guidelines and Redesign</h1>
+                </div>
+                <p class="subtitle">
+                  We created a set of actionable guidelines and sample redesigns to help SFRPD create a more usable, accessible, and trustworthy website. These recommendations can be implemented within CivicPlus and aim to reduce confusion and customer support burden.
                 </p>
+              </div>
+
+              <!-- Overview -->
+              <section class="solution-overview">
+                <div class="container">
+                  <h2>Overview</h2>
+                  <p>We created a set of actionable guidelines and sample redesigns to help SFRPD create a more usable, accessible, and trustworthy website. These recommendations can be implemented within CivicPlus and aim to reduce confusion and customer support burden.</p>
+                </div>
+              </section>
+
+              <!-- Style Guidelines -->
+              <section class="solution-overview">
+                <div class="container">
+                  <h2>Style Guidelines</h2>
+                  <p>
+                    According to CSS Stats, the Picnic Rentals page uses 93 unique colors, 60 unique font sizes, and 26 unique font families. We recommend consolidating these into a single style guide that includes visual identity, layout templates, UI components, and writing tone to ensure consistency across departments.
+                  </p>
+                </div>
+              </section>
+
             
-                <h3>Style Guidelines</h3>
-                <p>
-                According to CSS Stats, the Picnic Rentals page uses 93 unique colors, 60 unique font sizes, and 26 unique font families. We recommend consolidating these into a single style guide that includes visual identity, layout templates, UI components, and writing tone to ensure consistency across departments.
-                </p>
-            
-                <h3>Style Guide Components</h3>
-                <ul class="styled-list">
-                <li><strong>Visual Identity:</strong> Logo usage, color palette, typography, and header hierarchy.</li>
-                <li><strong>Content Structure:</strong> Page templates, information architecture, and content sections.</li>
-                <li><strong>UI Elements:</strong> Button and link styles, forms, navigation consistency.</li>
-                <li><strong>Content Guidelines:</strong> Tone, voice, and terminology.</li>
-                </ul>
-            
-                <h3>Accessibility Guidelines</h3>
-                <p>As a government agency, SFRPD must follow accessibility standards. We highlighted key policies and implementation practices that benefit all users.</p>
-            
-                <ul class="styled-list">
-                <li><strong>Section 508:</strong> Federal electronic accessibility standards.</li>
-                <li><strong>California Code 7405 & 11135:</strong> State-level accessibility mandates.</li>
-                <li><strong>WCAG 2.2:</strong> Global standards for making digital content usable for people with disabilities.</li>
-                </ul>
-            
-                <h3>Accessibility Best Practices</h3>
-                <ul class="styled-list">
-                <li><strong>Provide Alt Text:</strong> Ensure all meaningful images include alt attributes.</li>
-                <li><strong>High Contrast:</strong> Maintain 4.5:1 contrast ratio for text visibility.</li>
-                <li><strong>Sufficient Font Size:</strong> Body text should be at least 16px.</li>
-                <li><strong>Label Form Fields:</strong> Use programmatic labels for all inputs.</li>
-                <li><strong>Keyboard Navigation:</strong> Ensure users can navigate via Tab, Enter, and Arrow keys.</li>
-                <li><strong>Heading Structure:</strong> Use consistent H1–H3 hierarchy.</li>
-                <li><strong>No Layout Tables:</strong> Use CSS for page structure instead of table-based layouts.</li>
-                </ul>
-            
-                <h3>Guidelines for Using CivicPlus Widgets</h3>
-                <ul class="styled-list">
-                <li><strong>Editor:</strong> WYSIWYG for formatted content (headlines, lists, media).</li>
-                <li><strong>Image:</strong> Static image with alt text.</li>
-                <li><strong>Slideshow:</strong> Visual carousel for headers and galleries.</li>
-                <li><strong>Related Documents:</strong> Downloadable file lists (e.g., PDFs, forms).</li>
-                <li><strong>Pages:</strong> Auto-generated list of subpages.</li>
-                <li><strong>Spacer:</strong> Adds vertical white space.</li>
-                <li><strong>Tabbed:</strong> Collapsible or interactive info panels.</li>
-                <li><strong>List:</strong> Structured, styled item listings.</li>
-                </ul>
-            
-                <h3>Example Redesigns</h3>
-                <p><strong>Picnic Rentals Page:</strong> Should include general policies (e.g., coyote warnings, fees, changes, jumpers). Place critical info at the top. Consider embedded maps via Esri widget (if CivicPlus tier supports it).</p>
-                <p><strong>Picnic Details Page:</strong> Tailored to each site. Include amenities, alcohol policy, and visual map. Remove redundant info already shown on the Rentals page.</p>
-            
-                <h3>Next Steps</h3>
-                <ul class="styled-list">
-                <li><strong>Audit & Prioritize:</strong> Identify and prioritize high-traffic pages for redesign.</li>
-                <li><strong>Develop Templates:</strong> Create standard CivicPlus templates (e.g., Rentals, Detail pages).</li>
-                <li><strong>Train Staff:</strong> Ensure editors are trained on guidelines and best practices.</li>
-                </ul>
-            </section>
-  
+               <!-- Style Guide Components Section -->
+              <section class="solution-overview">
+                <div class="container">
+                  <h2>Style Guide Components</h2>
+                  <div class="styleguide-grid">
+                    <!-- Card 1 -->
+                    <div class="styleguide-card">
+                      <div class="number-tag">01</div>
+                      <h3>Visual Identity & Branding</h3>
+                      <ul>
+                        <li>Logo usage guidelines and placement rules</li>
+                        <li>Official color palette with hex codes for primary and secondary colors</li>
+                        <li>Typography specifications (font families, sizes, weights, line heights)</li>
+                        <li>Consistent heading hierarchy (H1, H2, H3, etc.)</li>
+                      </ul>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="styleguide-card">
+                      <div class="number-tag">02</div>
+                      <h3>Content Structure & Layout</h3>
+                      <ul>
+                        <li>Page template specifications for common page types (Picnic Rentals, Athletic Fields, etc.)</li>
+                        <li>Consistent information architecture</li>
+                        <li>Progressive disclosure principles for complex information</li>
+                        <li>Standardized content sections (fees, contact info, warnings)</li>
+                      </ul>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="styleguide-card">
+                      <div class="number-tag">03</div>
+                      <h3>User Interface Elements</h3>
+                      <ul>
+                        <li>Button styles and states</li>
+                        <li>Link formatting and behavior</li>
+                        <li>Form design standards</li>
+                        <li>Navigation menu consistency</li>
+                        <li>Call-to-action styling</li>
+                      </ul>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="styleguide-card">
+                      <div class="number-tag">04</div>
+                      <h3>Content Guidelines</h3>
+                      <ul>
+                        <li>Writing tone and voice for park communications</li>
+                        <li>Information prioritization</li>
+                        <li>Consistent terminology across all pages</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Accessibility Guidelines Section -->
+              <section class="solution-overview">
+                <div class="container">
+                  <h2 class="section-title">Testing Approach</h2>              
+
+                  <!-- Why Accessibility Matters Box -->
+                  <div class="accessibility-box">
+                    <h3>Why Accessibility Matters</h3>
+                    <p>
+                      Web accessibility ensures that everyone, including people with disabilities, can use and benefit from your website. 
+                      This includes individuals who have cognitive, learning, or physical disabilities such as blindness, low vision, and 
+                      deafness or hardness of hearing. Making your website accessible removes barriers and allows all users to access the 
+                      same information and services as everyone else.
+                    </p>
+                    <p>
+                      Web accessibility often leads to better overall usability. Features like clear navigation, readable fonts, and captions 
+                      for videos not only help people with disabilities but also benefit users in challenging situations, such as browsing 
+                      in noisy environments or using mobile devices.
+                    </p>
+                  </div>
+
+                  <!-- Accessibility Laws Cards -->
+                  <h3>Policy & Regulations</h3>
+                  <p>
+                    As a government organization, SFRPD's digital properties are required to adhere to a number of accessibility standards.
+                    We outlined all of the accessibility laws and standards that SFRPD is required to meet. Here is a sample:
+                  </p>
+
+                  <div class="styleguide-grid">
+                    <div class="styleguide-card">
+                      <h3>Section 508</h3>
+                      <p>
+                        Section 508 of the Rehabilitation Act requires federal agencies to ensure that their electronic and 
+                        information technology is accessible to people with disabilities.
+                      </p>
+                    </div>
+                    <div class="styleguide-card">
+                      <h3>California Government Code Sections 7405 and 11135</h3>
+                      <p>
+                        These codes mandate that California state agencies and programs provide accessible technology and services 
+                        to individuals with disabilities, ensuring nondiscrimination in all state-funded activities.
+                      </p>
+                    </div>
+                    <div class="styleguide-card">
+                      <h3>Web Content Accessibility Guidelines (WCAG) 2.2</h3>
+                      <p>
+                        WCAG 2.2 provides a global standard for web accessibility, offering guidelines to make digital content 
+                        more usable for people with disabilities, including new success criteria for cognitive and motor impairments.
+                      </p>
+                      <div class="light-callout"> <strong>Be Advised:</strong> WCAG 3 is in development and will develop into a W3C Standard in a few years.</div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Accessibility Best Practices -->
+              <section class="solution-overview">
+                <div class="container">
+                  <h2>Accessibility Best Practices</h2>
+                  <div class="accessibility-best-grid">
+                    <div class="accessibility-row">
+                      <div class="left"><strong>Provide Alternative Text</strong><br>All meaningful images must have descriptive "alt text." Decorative images should have empty alt tags (<code>alt=""</code>).</div>
+                      <div class="right">Screen readers read alt text aloud, allowing visually impaired users to understand the content and context of an image.</div>
+                    </div>
+                    <div class="accessibility-row">
+                      <div class="left"><strong>Ensure High Contrast</strong><br>Text should have a contrast ratio of at least 4.5:1. For large text (18pt+), the ratio is 3:1.</div>
+                      <div class="right">Low-contrast text is difficult to read for users with low vision or color blindness.</div>
+                    </div>
+                    <div class="accessibility-row">
+                      <div class="left"><strong>Use Sufficient Font Size</strong><br>Body text should be a minimum of 16px (12pt). No text should be smaller than 12px (9pt).</div>
+                      <div class="right">Small text can be illegible for users with visual impairments and can cause eye strain for all users.</div>
+                    </div>
+                    <div class="accessibility-row">
+                      <div class="left"><strong>Label All Form Fields</strong><br>Every input field must have a programmatically associated <code>&lt;label&gt;</code>.</div>
+                      <div class="right">Labels tell screen readers what the form field is for, making it possible for users with disabilities to fill out forms.</div>
+                    </div>
+                    <div class="accessibility-row">
+                      <div class="left"><strong>Design for Keyboard Navigation</strong><br>Ensure interactive elements can be accessed via Tab, Enter, and Arrow keys.</div>
+                      <div class="right">Users with motor disabilities may rely on a keyboard or assistive tech instead of a mouse.</div>
+                    </div>
+                    <div class="accessibility-row">
+                      <div class="left"><strong>Use Headings Correctly</strong><br>Structure content with a logical heading hierarchy (e.g. H1 → H2 → H3).</div>
+                      <div class="right">Headings create a logical outline, which helps users navigate and understand content.</div>
+                    </div>
+                    <div class="accessibility-row">
+                      <div class="left"><strong>Avoid Layout Tables</strong><br>Use tables only for data, not layout. Use CSS for structure.</div>
+                      <div class="right">Screen readers interpret tables cell by cell, so using them for layout confuses reading order.</div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="solution-overview">
+                <div class="container">
+                  <h2 class="section-title">Guidelines for Using CivicPlus Widgets</h2>
+                  <p class="section-description">
+                    Widgets are the foundational building blocks of the CivicPlus website, serving as pre-configured modules for adding content and functionality to pages. Widgets range from simple text and image blocks to more complex elements like tables, slideshows, and document lists. We created a guide detailing the available widgets, outlining its purpose, providing examples of correct implementation, and defining the best practices for use.
+                  </p>
+              
+                  <div class="widget-grid">
+              
+                    <div class="widget-card">
+                      <div class="widget-content-top">
+                        <h3>Editor</h3>
+                        <p>The Editor widget is a WYSIWYG (What You See Is What You Get) text editing tool that allows you to add rich content such as formatted text, links, embedded media, and inline images. It supports basic styling (headlines, lists, bullet points) and is ideal for content-heavy pages.</p>
+                      </div>
+                      <div class="use-case-box">
+                        <strong>SFRPD Use Case:</strong> This would be used to write the main body of content for almost any page. For example, on a page detailing the "Athletic Field Permit Rules," you would use the Editor to write out the regulations, using bold text for emphasis on key rules, numbered lists for procedures, and hyperlinks to the official municipal code.
+                      </div>
+                    </div>
+              
+                    <div class="widget-card">
+                      <div class="widget-content-top">
+                        <h3>Image</h3>
+                        <p>A straightforward module for placing a single, static image on a page. It provides essential controls for alignment, resizing, and adding alternative text (alt-text) for ADA accessibility.</p>
+                      </div>
+                      <div class="use-case-box">
+                        <strong>SFRPD Use Case:</strong> Displaying a high-quality photo of the Japanese Tea Garden on its reservation page to entice potential visitors, or showing a simple map image indicating the exact location of a specific reservable picnic area within Golden Gate Park.
+                      </div>
+                    </div>
+              
+                    <div class="widget-card">
+                      <div class="widget-content-top">
+                        <h3>Slideshow</h3>
+                        <p>The Slideshow widget showcases a collection of images in a rotating, visually dynamic format. It's perfect for capturing user attention with beautiful visuals in a compact space, often used in page headers or hero sections.</p>
+                      </div>
+                      <div class="use-case-box">
+                        <strong>SFRPD Use Case:</strong> On the homepage for Facility Rentals, a Slideshow could feature stunning professional photos of top wedding venues like the Golden Gate Park Conservatory of Flowers, the Palace of Fine Arts, and Stern Grove.
+                      </div>
+                    </div>
+              
+                    <div class="widget-card">
+                      <div class="widget-content-top">
+                        <h3>Related Documents</h3>
+                        <p>This widget creates a clean, organized list of downloadable files (e.g., PDF, DOCX, XLSX). It's designed to give users direct access to important forms, applications, and informational documents without cluttering the page.</p>
+                      </div>
+                      <div class="use-case-box">
+                        <strong>SFRPD Use Case:</strong> On the "Film & Photo Permits" page, this widget is essential for listing all required documentation: "Film Permit Application.pdf," "Insurance Requirements.pdf," "Drone Usage Policy.pdf," and "Fee Schedule.xlsx."
+                      </div>
+                    </div>
+              
+                    <div class="widget-card">
+                      <div class="widget-content-top">
+                        <h3>Pages</h3>
+                        <p>This module dynamically generates a list of sub-pages that exist under the current page in the site’s hierarchy. It's a powerful tool for automating navigation and helping users discover related content within a specific section.</p>
+                      </div>
+                      <div class="use-case-box">
+                        <strong>SFRPD Use Case:</strong> On the main "Permits" landing page, the Pages widget could automatically create a linked list of all available permit types, such as "Picnic Area Permits," "Wedding Ceremony Permits," and "Special Event Permits," ensuring the list is always up-to-date as new pages are added.
+                      </div>
+                    </div>
+              
+                    <div class="widget-card">
+                      <div class="widget-content-top">
+                        <h3>Spacer</h3>
+                        <p>A simple but critical design tool. The Spacer inserts vertical white space between other widgets on a page. Its sole purpose is to improve the layout, reduce visual clutter, and guide the user’s eye, making content more readable.</p>
+                      </div>
+                      <div class="use-case-box">
+                        <strong>SFRPD Use Case:</strong> On a long, text-heavy page explaining the multi-step process for obtaining a festival permit, a Spacer could be used to create a clean visual break between "Step 1: Application Submission" and "Step 2: Interdepartmental Review."
+                      </div>
+                    </div>
+              
+                    <div class="widget-card">
+                      <div class="widget-content-top">
+                        <h3>Tabbed</h3>
+                        <p>The Tabbed widget organizes large amounts of related content into a compact, interactive module. Users click on tabs to reveal different sets of information, preventing long, overwhelming pages.</p>
+                      </div>
+                      <div class="use-case-box">
+                        <strong>SFRPD Use Case:</strong> On a facility page for the "County Fair Building," tabs could be used to separate information into logical sections like "Rental Rates & Fees," "Floor Plan & Capacity," "Available A/V Equipment," and "Catering & Vendor Rules."
+                      </div>
+                    </div>
+              
+                    <div class="widget-card">
+                      <div class="widget-content-top">
+                        <h3>List</h3>
+                        <p>This module creates a structured, styled list of items. It offers more design control than a simple bulleted list within the Editor and can be used for creating visually distinct checklists or directories.</p>
+                      </div>
+                      <div class="use-case-box">
+                        <strong>SFRPD Use Case:</strong> Creating a clear, step-by-step checklist for "What You Need to Bring to Your Appointment" when finalizing a large event permit, or a bulleted list of "Approved Inflatable Jumper Companies" for picnic reservations.
+                      </div>
+                    </div>
+              
+                  </div>
+                </div>
+              </section>
+              
+              <section class="next-steps">
+                <div class="container">
+                  <h2 class="section-title">Next Steps</h2>
+                  <p class="section-description">
+                    This document provides the foundation for a more effective and accessible SFRPD website.
+                    We recommend prioritizing the redesign of the "Permits & Reservations" section, as it is a high-traffic area where users often face challenges.
+                  </p>
+                  <p class="recommended-title">Recommended Next Steps:</p>
+              
+                  <div class="steps-grid">
+                    <div class="step-card">
+                      <div class="step-number">01</div>
+                      <div class="step-content">
+                        <h3>Audit & Prioritize</h3>
+                        <p>Conduct a full audit of the website to identify all pages that need to be updated to meet these guidelines.</p>
+                      </div>
+                    </div>
+              
+                    <div class="step-card">
+                      <div class="step-number">02</div>
+                      <div class="step-content">
+                        <h3>Develop Templates</h3>
+                        <p>Create official page templates within CivicPlus for common page types (e.g., Picnic Rentals, Picnic Area Detail Page) to ensure future consistency.</p>
+                      </div>
+                    </div>
+              
+                    <div class="step-card">
+                      <div class="step-number">03</div>
+                      <div class="step-content">
+                        <h3>Train Staff</h3>
+                        <p>Ensure all staff members responsible for updating the website are trained on this content and accessibility guidelines.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
   
             
         </section>
@@ -458,7 +703,7 @@
                   <strong>🔗 Failure to Provide Correct Links</strong><br>
                   When asked about availability, the chatbot linked to a "Tentative Calendar for Special Events" instead of the proper ActiveNet availability calendar.
                 </li>
-                
+
                 <li class="implication-item">
                   <div class="implication-box">
                     <h3>Testing Implications</h3>
@@ -480,7 +725,7 @@
           
             
             <section class="ideal-chatbot">
-                <h2>💬 Ideal Chatbot</h2>
+                <h2>Ideal Chatbot</h2>
                 <p class="section-description">
                   We designed an ideal chatbot demonstrating the capabilities and use cases that the current chatbot should be able to perform but is lacking.
                 </p>
@@ -534,7 +779,7 @@
               
                 <div class="comparison-grid">
                   <div class="comparison-box current">
-                    <h5>⚠️ Current CivicPlus Chatbot</h5>
+                    <h5>Current CivicPlus Chatbot</h5>
                     <ul>
                       <li>⚠️ Can only read content on SFRPD's public-facing website</li>
                       <li>⚠️ Performs basic information gathering only</li>
@@ -545,7 +790,7 @@
                   </div>
               
                   <div class="comparison-box ideal">
-                    <h5>✅ Our Ideal Chatbot</h5>
+                    <h5>Our Ideal Chatbot</h5>
                     <ul>
                       <li>✅ Integrates directly with third-party reservation systems</li>
                       <li>✅ Real-time data synchronization</li>
@@ -611,7 +856,7 @@
             </section>
   
             <section class="ideal-chatbot">
-                <h2>📝 Writing Process</h2>
+                <h2>Writing Process</h2>
                 <p class="section-description">
                   Some notable parts of the writing process include:
                 </p>
@@ -678,7 +923,7 @@
             </section>
 
             <section class="ideal-chatbot">
-                <h2>✅ Key Improvements Made</h2>
+                <h2>Key Improvements Made</h2>
                 
                 <div class="capability-grid">
                 <div class="capability-card">
@@ -741,6 +986,7 @@
                     </li>
                 </ul>
             </section>
+
   
         </section>
 
