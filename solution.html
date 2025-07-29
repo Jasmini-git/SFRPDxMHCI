@@ -153,6 +153,40 @@
                 Eventually we pursued the idea of a browser extension that allows staff to draft follow up emails using templates. We chose this idea because it's something our team could develop within the timeline of the project, it doesn't require new third party vendors, and it doesn't require integrating with ActiveNet.
                 </p>
             </div>
+            <div class="process-card">
+              <h3>Testing and Iterations</h3>
+              <p>
+                Through our own iteration and over the course of several rounds of testing, we made a number of notable decisions and considerations while designing our Email Helper. These include but are not limited to the following:
+              </p>
+              <ul>
+                <li>
+                  <strong>Adding draft creation with adaptations:</strong> Our initial intention was for users to copy their completed template from the extension and paste the content into a draft email they created on their own. Both our mentors and a tester suggested the ability to send the templated email directly from the extension would be helpful. However, further exploration yielded that (1) sending emails from browser extensions is not possible, and (2) though drafts could be created with <code>mailto:</code>, this would not preserve formatting. As a compromise, we’ve provided users with the option to either use the template to create an unformatted draft in their default mail application, or manually copy and paste the completed template with formatting.
+                </li>
+                <li>
+                  <strong>Reusing Inputs:</strong> We recognized that making the user recreate certain custom inputs would be inefficient; for example, most templates would include “Park Name” and “Date of Reservation.” The custom input node has been designed to display a list of previous and/or hardcoded input names for the user to select from if desired.
+                </li>
+                <li>
+                  <strong>Optimizing Layout:</strong> Our first renditions included clearly separated steps for completing inputs and previewing the completed template. Testers recommended combining these actions into a single window, which is where the final design stands.
+                  <br><br>
+                  <div class="image-comparison">
+                    <img src="images/optimizing.png" alt="Field completion interface"/>
+                  </div>
+                  <p class="image-caption">
+                    <em>Original design, with field completion (left) and template previewing (right) in separate windows.</em>
+                  </p>
+                  <div class="image-comparison">
+                    <img src="images/optimizing2.png" alt="Field completion interface"/>
+                  </div>
+                  <p class="image-caption">
+                    <em>Final design, with field completion and template previewing in the same window.</em>
+                  </p>
+                </br>
+                </li>
+                <li>
+                  <strong>Finding a Centralization Alternative:</strong> Though an ideal flow for a tool like this would be one in which an administrative user could maintain templates and push updates across an organization, we wanted this solution to be free from the costs of hosting and data storage. Even if we couldn’t centralize data at a single source, there needed to be a reasonably low-effort way for multiple users to share templates. As a result, the design now includes an export function that allows user A to generate a file of their current templates that can then be imported to user B’s instance of the tool.
+                </li>
+              </ul>
+            </div>
           </section>
 
           <!-- Implementation -->
@@ -192,6 +226,10 @@
                 <h1>QR Codes/NFC</h1>
             </div>
             <p class="subtitle">Physical touchpoints, placed near reservable facilities, which allow park goers to learn about the reservation system and see real time availability through their phones.</p>
+            </div>
+
+            <div class="image-comparison">
+              <img src="images/qrcode.png" alt="QR code on the picnic table"/>
             </div>
         
             <!-- Overview -->
@@ -299,6 +337,33 @@
                 </div>
             </section>
 
+            <!-- Implementation -->
+            <section class="implementation">
+              <h2>Implementation</h2>
+              <p>
+                To make the most of this QR + NFC smart signage solution, we recommend the following steps:
+              </p>
+              <ul class="metric-list">
+                <li>
+                  <span class="metric-title">Install Signage at Key Locations:</span>
+                  Place the provided QR/NFC signage at high-impact areas like picnic tables, reservable facilities, park entrances, or activity zones. Ensure visibility and durability (e.g., eye-level for standing signs, waterproof labels for tables).
+                </li>
+                <li>
+                  <span class="metric-title">Assign Ownership of Link Content:</span>
+                  Designate a staff member or team to manage the URLs behind the QR codes. Update real-time information such as picnic table availability, event updates, closures, or rule changes through a centralized platform (e.g., Airtable, Notion, or a dedicated SFRPD web page).
+                </li>
+                <li>
+                  <span class="metric-title">Monitor Usage and Feedback:</span>
+                  Optionally track engagement by using a link management tool (e.g., Bitly or Google Analytics) to monitor how often each code is scanned.
+                </li>
+                <li>
+                  <span class="metric-title">Plan for Maintenance and Expansion:</span>
+                  Schedule periodic checks to ensure signage remains scannable and intact. As the system proves successful, consider expanding it to other parks or use cases (e.g., event registration, maintenance reporting, scavenger hunts).
+                </li>
+              </ul>
+            </section>
+
+
             <!-- Success-Metrics -->
             <section class="metrics">
                 <h2>Success Metrics</h2>
@@ -306,19 +371,19 @@
               
                 <ul class="metric-list">
                   <li>
-                    <strong>Number of scans per location:</strong>
+                    <span class="metric-title">Number of scans per location:</span>
                     Track engagement using link management tools like Bitly to understand which locations see the most usage.
                   </li>
                   <li>
-                    <strong>Repeat scans vs. unique users:</strong>
+                    <span class="metric-title">Repeat scans vs. unique users:</span>
                     Measure whether users are returning to access information multiple times or if each scan represents a new user.
                   </li>
                   <li>
-                    <strong>Visitor satisfaction:</strong>
+                    <span class="metric-title">Visitor satisfaction:</span>
                     Implement short in-page polls to gather feedback on the usefulness and clarity of the information provided.
                   </li>
                   <li>
-                    <strong>Reduction in staff-reported incidents:</strong>
+                    <span class="metric-title">Reduction in staff-reported incidents:</span>
                     Monitor whether there's a decrease in confusion-related incidents or questions that staff need to address in person.
                   </li>
                 </ul>
